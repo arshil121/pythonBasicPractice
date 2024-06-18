@@ -15,6 +15,12 @@
 
 
 from prettytable import PrettyTable
+
 table = PrettyTable()
-table.add_column("Pokemon Name", ["Pickachu", "Sqiurtle", "Charmander"])
+table.add_column(
+    "Pokemon Name",
+    ["Pickachu", "Sqiurtle", "Charmander"],
+)
+table.add_column("Type", ["A", "B", "C"])
+table.align = "l"
 print(table)
